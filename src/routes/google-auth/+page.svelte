@@ -2,9 +2,12 @@
 	import { page } from '$app/state';
 	import { finishAuth } from '../../utils';
 
+	let authProcessed = $state(false);
+
 	$effect(() => {
 		const code = page.url.searchParams.get('code');
-		if (code) {
+		if (code && !authProcessed) {
+			authProcessed = true;
 			finishAuth(code);
 		}
 	});
