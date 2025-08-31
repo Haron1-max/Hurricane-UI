@@ -109,13 +109,13 @@ export const makeAuthenticatedRequest = async (fetchFn?: typeof fetch) => {
 
 			// Check if it's an auth error
 			if (response.status === 401) {
-				console.log('Auth required:', errorData.error.message);
+				console.log('Auth required:', errorData.error);
 				// When called from load function, throw redirect directly
 				// When called from browser, redirect will work
 				throw redirect(302, '/');
 			}
 
-			throw new Error(errorData.error.message);
+			throw new Error(errorData.error);
 		}
 
 		const result = await response.json();
