@@ -10,7 +10,7 @@
 			to connect with potential clients.
 		</p>
 	</div>
-	<button onclick={getAuthURL}>Start 14 Day Free Trial</button>
+	<button onclick={getAuthURL}>Start 3 Day Free Trial</button>
 </section>
 
 <style>

@@ -32,7 +32,7 @@
 	<div class="heading">
 		<h1>Simple, Transparent Pricing</h1>
 		<p>
-			One plan that includes everything. Try all our features risk-free with your 14-day free trial.
+			One plan that includes everything. Try all our features risk-free with your 3-day free trial.
 		</p>
 	</div>
 
