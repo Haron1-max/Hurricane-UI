@@ -18,7 +18,7 @@ const getBaseURL = (): string => {
 		return 'http://localhost:8080';
 	} else {
 		// Production environment
-		return 'http://api.hurricane.softwrhq.com'; // Replace with your actual production URL
+		return 'https://api.hurricane.softwrhq.com'; // Replace with your actual production URL
 	}
 };
 
